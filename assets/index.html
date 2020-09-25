@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <h2 class = "navbar__logo">Astro</h2>                       
+            <ul class="navbar__content">                           
+                <li class="navbar__content__links"><a href="#">Home</a></li>                            
+                <li class="navbar__content__links"><a href="#">About</a></li>                         
+                <li class="navbar__content__links"><a href="#">Services</a></li>
+                <li class="navbar__content__links"><a href="#">Contact Us</a></li>
+            </ul>
+            <i class="fas fa-bars" id ="bars"></i>
+
+        </nav>
+    </header>
+    <div class="container container-md" data-aos="ease-in-out-back">
+        <img src="img/astro.jpg" alt="landing page astro">
+        <h2>ASTROPHOTOGRAPHY</h2>
+        <div>
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <section class = "showcase container ">
+        <div class="showcase__content">
+            <img src="img/camera.jpg" alt="Camera">
+            <div class = "showcase__content__camera" data-aos="fade-right" >
+                <i class="fas fa-camera-retro"></i>
+                <h5>Get a Good Camera</h5>
+                <p>For the most part, astrophotography divides into two styles. There's long exposure shots, showing stars streaking across the sky in a dizzying array of circles. Then you have short exposure shots, which is your more traditional glamor photos of the Milky Way.</p>
+            </div>
+
+        </div>
+        <div class="showcase__content">
+            <img src="img/slow.jpg" alt="Slow and steady" data-aos="fade-left">
+            <div class = "showcase__content__slow">
+                <i class="fas fa-adjust"></i>
+                <h5>Slow and Steady</h5>
+                <p>When it comes to astrophotography, a tripod is a must, not an option. Creating these images can be a slow business compared to the blazing shutter speed of your average photo. If the cameras moves during an exposure, even a fraction of a fraction of an inch, your entire composition will likely be ruined.</p>
+            </div>
+        </div>
+        <div class="showcase__content">
+            <img src="img/light.jpg" alt="Light">
+            <div class = "showcase__content__light" data-aos="fade-right">
+                <i class="fas fa-lightbulb"></i>
+                <h5>Lighting the Way</h5>
+                <p>I use a headlamp on a very low setting to find my way around the camera without accidentally affecting the exposure. A headlamp is also very handy to see dials and buttons while leaving your hands free to set up the shot at night. Something like the ThruNite headlamp has a very low setting and uses easy-to-find AA batteries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class = "showcase-2 container">
+        <div class="showcase__desktop">
+            <h5>High Dynamic Range</h5>
+            <p>One technique is to take multiple shots, bracketing or varying the actual exposure time, and merge them as HDR which you can composite with the final image of the properly exposed sky.</p>
+        </div>
+        <div class="showcase__desktop">
+            <h5>Painting with Light</h5>
+            <p>Painting with Light is another technique that can be used if the foreground is close enough. There are two ways to paint with light: using a constant light source such as a flashlight or with a Speedlight.</p>
+        </div>
+        <div class="showcase__desktop">
+            <h5>Constant light source</h5>
+            <p>while the shutter is open, use a constant light source to illuminate the foreground. Move the light around during the entire exposure so you don’t end up with hot spots..</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p>copyright © 2020 All rights reserved</p>
+                <i class="fab fa-angrycreative"></i>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
